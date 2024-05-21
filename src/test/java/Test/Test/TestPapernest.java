@@ -63,8 +63,10 @@ public class TestPapernest {
 		 
 		 
 		 driver.findElement(By.id("housing.address.street_number")).sendKeys(street_number);
+		 Thread.sleep(3000);	
 		 driver.findElement(By.id("housing.address.street")).clear();
 		 driver.findElement(By.id("housing.address.street")).sendKeys(address_street);
+		 Thread.sleep(3000);	
 		 driver.findElement(By.id("housing.address.city")).sendKeys(address_city);
 		 
 		 
@@ -94,10 +96,7 @@ public class TestPapernest {
 			
 			
 		 
-		   //WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(5)); 		 
-			//WebElement Suivant1;
-			//Suivant1 = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("button_next")));
-			//Suivant1.click();
+		  
 			Thread.sleep(3000);	    
      		WebElement Suivant1 = driver.findElement(By.id("button_next"));
 		    JavascriptExecutor executor = (JavascriptExecutor)driver;
